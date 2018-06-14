@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  everbug:
+    restart: always
+    container_name: "everbug"
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "everbug:v1.0"
+    volumes:
+      - "./:/opt/data"
+      - "./tests:/opt/data/tests:ro"
+      - "./everbug:/opt/data/everbug:ro"
