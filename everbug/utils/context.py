@@ -37,7 +37,7 @@ def wrap_context(context):
             * name - name of context element
             * value - value of context element
             * class - repr class name of a value
-            * ext - flag of type group for chrome-extension
+            * ext - flag of type group for extension
             * count - length of value if it's possible or makes sense
         :param key: name of context element.
         :param val: value of context element.

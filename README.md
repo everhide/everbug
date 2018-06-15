@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/coverage-98%25-green.svg)
 
-The Everbug is a lightweight Django middleware for Chrome extension with easy install.  
+The Everbug is a lightweight Django middleware for Chrome/Firefox extension with easy install.
 One of the advantages: the response body of target page remains clean and unchanged.  
 
 Special summary:    
@@ -25,8 +25,9 @@ Add "everbug" to your INSTALLED_APPS in settings.py.
 Append "everbug.middleware.Tracer" to MIDDLEWARE or MIDDLEWARE_CLASSES in settings.py.
 ```
 
-For Chrome:
-Install [everbug extension](https://chrome.google.com/webstore/search/everbug) from Google webstore.
+For browser:  
+* [Chrome extension](https://chrome.google.com/webstore/search/everbug)   
+* [Firefox extension](https://addons.mozilla.org/ru/firefox/addon/everbug/)
 
 ## Usage  
 
