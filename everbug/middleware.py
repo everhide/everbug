@@ -50,7 +50,8 @@ class Tracer(MiddlewareMixin):
 
     def process_template_response(self, request, response):
         if self.request_id and hasattr(response, 'context_data'):
-            self.data[Field.CONTEXT] = wrap_context(response.context_data)
+            if not request.path.startswith('/admin/'):
+                self.data[Field.CONTEXT] = wrap_context(response.context_data)
         return response
 
     def process_response(self, request, response):
