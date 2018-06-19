@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/coverage-98%25-green.svg)
 
-The Everbug is a lightweight Django middleware for Chrome/Firefox extension with easy install.
+The Everbug is a lightweight Django middleware for Chrome/Firefox extension with easy install.  
 One of the advantages: the response body of target page remains clean and unchanged.  
 
 Special summary:    
@@ -11,10 +11,8 @@ Special summary:
 * Profiles functions (cProfile through decorator)  
 * Support ajax requests  
 
-### Screenshots
-![Context](/screenshots/context.png)
-![Queries](/screenshots/queries.png)
-![Profile](/screenshots/profile.png)
+### Demo
+![Demo](.preview.gif)
 
 ## Installing
 
@@ -30,8 +28,7 @@ For browser:
 * [Firefox extension](https://addons.mozilla.org/ru/firefox/addon/everbug/)
 
 ## Usage  
-
-"Context" works for any view which has a "context_data". "Queries" works as-is for all databases in "DATABASES" section. "Profile" works through decorator (based on builtin cProfile). By default, profile output is truncated to 20 lines.    
+Context variables displayed as-is, except admin views, DRF views and all views without a context_data. Queries works for all databases and requests (include ajax) in "DATABASES" section. Profile works for all methods through decorator (based on builtin cProfile). By default, profile output is truncated to 20 lines.  
 
 Example usage:
 ```
