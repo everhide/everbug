@@ -36,13 +36,13 @@ from everbug.shortcuts import profile
 
 @profile
 def sample_method():
-    // some code here ...  
+    # some code here ...  
 ```
 Call @profile with argument for full view, for example:  
 ```python
 @profile(short=False)
 def sample_method():
-    // some code here ...  
+    # some code here ...  
 ```
 
 ## Running the tests
