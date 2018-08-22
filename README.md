@@ -31,7 +31,7 @@ For browser:
 Context variables displayed as-is, except admin views, DRF views and all views without a context_data. Queries works for all databases and requests (include ajax) in "DATABASES" section. Profile works for all methods through decorator (based on builtin cProfile). By default, profile output is truncated to 20 lines.  
 
 Example usage:
-```
+```python
 from everbug.shortcuts import profile
 
 @profile
@@ -39,14 +39,14 @@ def sample_method():
     // some code here ...  
 ```
 Call @profile with argument for full view, for example:  
-```
+```python
 @profile(short=False)
 def sample_method():
     // some code here ...  
 ```
 
 ## Running the tests
-```
+```shell
 docker-compose  up -d 
 docker exec -it everbug tox
 ```
