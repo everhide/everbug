@@ -1,13 +1,14 @@
 from distutils.core import setup
 from setuptools import find_packages
+from everbug import __version__
 
 setup(
     name='everbug',
-    version='1.1',
+    version=__version__,
     description='Django debug extension',
     license='MIT',
     platform='any',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
