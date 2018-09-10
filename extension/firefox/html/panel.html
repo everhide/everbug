@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/hljs.theme.css">
+    <link rel="stylesheet" href="../css/plugin.css">
+
+    <script type="text/javascript" src="../js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/lib/highlight.js"></script>
+    <script type="text/javascript" src="../js/lib/sql-formatter.min.js"></script>
+    <script type="text/javascript" src="../js/lib/languages/json.js"></script>
+    <script type="text/javascript" src="../js/lib/languages/sql.js"></script>
+
+    <script type="text/javascript" src="../js/ext/panel.js"></script>
+</head>
+<body>
+
+<div id="extension">
+
+    <ul id="tabs">
+        <li class="tb_context"><a href="#tab_context">Context</a></li>
+        <li class="tb_queries"><a href="#tab_queries">Queries</a></li>
+        <li class="tb_profile"><a href="#tab_profile">Profile</a></li>
+        <li class="tb_help"><a href="#tab_help">Help</a></li>
+    </ul>
+
+    <div id="panels">
+        <div class="wrapper">
+
+            <div id="tab_context" class="panel">
+                <ul class="context-view"></ul>
+            </div>
+
+            <div id="tab_queries" class="panel">
+                <div class="info"></div>
+                <div class="db">
+                    <div class="db-select">
+                        <label for="db_filter">Select DB</label>
+                        <select id="db_filter" dir="rtl"></select>
+                    </div>
+                </div>
+                <div class="queries"></div>
+            </div>
+
+            <div id="tab_profile" class="panel">
+                <div class="profile-view">
+                    <ul></ul>
+                </div>
+            </div>
+
+            <div id="tab_help" class="panel">
+
+                <div class="menu">
+                    <h2>Welcome to everbug!</h2>
+                    <br><br>
+                    <h3>Installation</h3>
+                    <hr>
+                    <p>As usual:</p>
+                    <p>Run "pip install everbug"</p>
+                    <p>Add "everbug" to your INSTALLED_APPS.</p>
+                    <p>Finally, append "everbug.middleware.Tracer" to MIDDLEWARE or MIDDLEWARE_CLASSES in settings.py.</p>
+                    <br>
+                    <h3>Additional information</h3>
+                    <hr>
+                    <p>Project home: <a target="_blank" href="https://github.com/everhide/everbug">https://github.com/everhide/everbug</a></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

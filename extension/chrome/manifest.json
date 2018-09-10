@@ -1,0 +1,20 @@
+{
+    "name": "Everbug",
+    "icons": {
+        "16": "img/icons/icon_16.png",
+        "32": "img/icons/icon_32.png",
+        "64": "img/icons/icon_64.png"
+    },
+    "browser_action": { "name": "Everbug" },
+    "version": "1.24",
+    "description": "Everbug - Debugger for Django projects",
+    "devtools_page": "html/devtools.html",
+    "background": {
+        "scripts": ["js/ext/background.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [ "js/*", "js/lib/*", "js/languages/*", "html/*", "css/*", "img/*" ],
+    "permissions": [ "tabs", "webRequest", "webRequestBlocking", "webNavigation", "<all_urls>"],
+    "manifest_version": 2
+}
+
